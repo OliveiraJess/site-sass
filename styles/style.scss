@@ -1,0 +1,34 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height : 100vh;
+
+    .esquerdo {
+        background-color: pink;
+        width           : 50%;
+
+        .texto {
+            color     : aquamarine;
+            font-size : 150px;
+            margin-top: 40%;
+            text-align: center;
+        }
+    }
+
+    .direito {
+        background-color: aquamarine;
+        width           : 50%;
+
+        .texto {
+            color     : pink;
+            font-size : 150px;
+            margin-top: 40%;
+            text-align: center;
+        }
+
+    }
+}

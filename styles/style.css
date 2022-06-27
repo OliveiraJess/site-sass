@@ -1,1 +1,29 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.container .esquerdo {
+  background-color: pink;
+  width: 50%;
+}
+.container .esquerdo .texto {
+  color: aquamarine;
+  font-size: 150px;
+  margin-top: 40%;
+  text-align: center;
+}
+.container .direito {
+  background-color: aquamarine;
+  width: 50%;
+}
+.container .direito .texto {
+  color: pink;
+  font-size: 150px;
+  margin-top: 40%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
