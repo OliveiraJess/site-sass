@@ -1,3 +1,6 @@
+$cor-principal : #F9CEEE;
+$cor-secundaria: #CCF3EE;
+
 body {
     margin : 0;
     padding: 0;
@@ -8,11 +11,11 @@ body {
     height : 100vh;
 
     .esquerdo {
-        background-color: pink;
+        background-color: $cor-principal;
         width           : 50%;
 
         .texto {
-            color     : aquamarine;
+            color     : $cor-secundaria;
             font-size : 150px;
             margin-top: 40%;
             text-align: center;
@@ -20,11 +23,11 @@ body {
     }
 
     .direito {
-        background-color: aquamarine;
+        background-color: $cor-secundaria;
         width           : 50%;
 
         .texto {
-            color     : pink;
+            color     : $cor-principal;
             font-size : 150px;
             margin-top: 40%;
             text-align: center;

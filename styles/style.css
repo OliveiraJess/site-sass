@@ -8,21 +8,21 @@ body {
   height: 100vh;
 }
 .container .esquerdo {
-  background-color: pink;
+  background-color: #F9CEEE;
   width: 50%;
 }
 .container .esquerdo .texto {
-  color: aquamarine;
+  color: #CCF3EE;
   font-size: 150px;
   margin-top: 40%;
   text-align: center;
 }
 .container .direito {
-  background-color: aquamarine;
+  background-color: #CCF3EE;
   width: 50%;
 }
 .container .direito .texto {
-  color: pink;
+  color: #F9CEEE;
   font-size: 150px;
   margin-top: 40%;
   text-align: center;
