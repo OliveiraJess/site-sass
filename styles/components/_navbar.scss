@@ -1,0 +1,17 @@
+nav {
+    text-align: center;
+
+    ul {
+
+        li {
+            display: inline-block;
+            padding: 1rem;
+
+            a {
+                font-weight    : bold;
+                text-decoration: none;
+                text-transform : uppercase;
+            }
+        }
+    }
+}
