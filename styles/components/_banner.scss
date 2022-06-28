@@ -1,0 +1,28 @@
+@import "../abstract/variaveis.scss";
+
+.banner {
+    align-items    : center;
+    background     : url(../../imagens/banner.jpeg) 27% center no-repeat;
+    background-size: cover;
+    display        : flex;
+    justify-content: center;
+    min-height     : 350px;
+    opacity        : 0.9;
+
+    .inner-banner {
+        background-color: $cor-secundaria;
+        border-radius: 45px;
+        opacity: 0.9;
+        padding: 3rem;
+
+        h1 {
+            font-size: $tamanho-do-texto;
+            color: $cor-quaternaria;
+        }
+
+        h2 {
+            font-size: $tamanho-do-texto / 2;
+            color: $cor-quaternaria;
+        }
+    }
+}
