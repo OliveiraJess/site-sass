@@ -144,9 +144,9 @@ nav ul li a:hover {
 }
 
 footer {
-  text-align: center;
-  font-size: 1.5rem;
   border-top: 2px solid #97C4B8;
+  font-size: 1.5rem;
+  text-align: center;
   margin-top: 1rem;
   padding: 1.2rem;
   background: linear-gradient(to left, #97C4B8, #CCF3EE, #F9F3EE, #F9CEEE);
