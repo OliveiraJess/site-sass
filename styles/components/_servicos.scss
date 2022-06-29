@@ -28,8 +28,22 @@
             text-align: center;
             width     : 360px;
 
+            h5 {
+                color: $cor-quaternaria;
+                font-size: $tamanho-do-texto / 1.5;
+                font-weight: 300;
+                margin-bottom: 20px;
+                margin-top: 25px;
+            }
+
+            p {
+                font-size: $tamanho-do-texto / 3;
+                font-weight: 300;
+                line-height: 1.25rem;
+            }
+
             .img-container {
-                border-bottom : 6px solid $cor-secundaria;
+                border-bottom : 6px solid $cor-primaria;
                 padding-bottom: 2px;
 
                 img {
