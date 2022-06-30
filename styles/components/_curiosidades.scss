@@ -1,13 +1,10 @@
 @import '../abstract/variaveis.scss';
 
 #curiosidades {
-    padding: 1rem;
     text-align: center;
-    margin: 5px;
 
     h3 {
-        color: $cor-quaternaria;
-        font-size: $tamanho-do-texto / 2.5;
+        color  : $cor-quaternaria;
         padding: 0.75rem;
     }
 
@@ -18,4 +15,42 @@
     p {
         margin-top: 5px;
     }
+}
+
+
+@media screen and (min-width: 320px) {
+
+    #curiosidades {
+        margin: 10px;
+
+        img {
+            width: 300px;
+        }
+
+        h3 {
+            font-size: $tamanho-do-texto / 1.5;
+        }
+
+        p {
+            line-height: 1.2rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #curiosidades {
+        padding: 1rem;
+        margin : 5px;
+
+        img {
+            width: 450px;
+        }
+
+        h3 {
+            font-size: $tamanho-do-texto / 2.5;
+        }
+    }
+
 }

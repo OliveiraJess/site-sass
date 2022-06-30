@@ -1,11 +1,9 @@
 @import "../abstract/variaveis.scss";
 
 #servicos {
-    margin: 80px;
 
     h3 {
         color         : $cor-quaternaria;
-        font-size     : $tamanho-do-texto / 2.5;
         font-weight   : 300;
         margin        : 1rem;
         text-align    : center;
@@ -13,31 +11,23 @@
     }
 
     h4 {
-        font-size    : $tamanho-do-texto / 1.2;
-        font-weight  : 300;
-        margin-bottom: 80px;
-        text-align   : center;
-
+        font-weight: 300;
+        text-align : center;
     }
 
     .cards {
-        display        : flex;
-        justify-content: space-evenly;
+        display: flex;
 
         .card {
             text-align: center;
-            width     : 360px;
 
             h5 {
-                color: $cor-quaternaria;
-                font-size: $tamanho-do-texto / 1.5;
-                font-weight: 300;
+                color        : $cor-quaternaria;
+                font-weight  : 300;
                 margin-bottom: 20px;
-                margin-top: 25px;
             }
 
             p {
-                font-size: $tamanho-do-texto / 3;
                 font-weight: 300;
                 line-height: 1.25rem;
             }
@@ -49,6 +39,74 @@
                 img {
                     max-width: 100%;
                 }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:320px) {
+    #servicos {
+        margin: 20px;
+
+        h3 {
+            font-size: $tamanho-do-texto / 1.75;
+        }
+
+        h4 {
+            font-size    : $tamanho-do-texto / 2;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            flex-direction: column;
+
+            .card {
+                h5 {
+                    font-size : $tamanho-do-texto / 1.75;
+                    margin-top: 20px;
+                }
+
+                p {
+                    font-size    : $tamanho-do-texto / 2.5;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #servicos {
+        margin: 80px;
+
+        h3 {
+            font-size: $tamanho-do-texto / 2.5;
+        }
+
+        h4 {
+            font-size    : $tamanho-do-texto / 1.2;
+            margin-bottom: 80px;
+        }
+
+        .cards {
+            justify-content: space-evenly;
+            flex-direction : row;
+
+            .card {
+                width: 360px;
+
+                h5 {
+                    font-size : $tamanho-do-texto / 1.5;
+                    margin-top: 25px;
+                }
+
+                p {
+                    font-size: $tamanho-do-texto / 3;
+                }
+
             }
         }
     }

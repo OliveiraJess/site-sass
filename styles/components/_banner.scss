@@ -11,20 +11,46 @@
 
     .inner-banner {
         background-color: $cor-secundaria;
-        border-radius: 45px;
-        opacity: 0.9;
-        padding: 3rem;
+        border-radius   : 45px;
+        opacity         : 0.9;
+        padding         : 3rem;
 
         h1 {
-            font-size: $tamanho-do-texto;
-            color: $cor-quaternaria;
+            color     : $cor-quaternaria;
             text-align: center;
         }
 
         h2 {
-            font-size: $tamanho-do-texto / 2;
-            color: $cor-quaternaria;
+            color     : $cor-quaternaria;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .inner-banner {
+        width: 200px;
+
+        h1 {
+            font-size: $tamanho-do-texto / 1.2;
+        }
+
+        h2 {
+            font-size: $tamanho-do-texto / 2.5;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .inner-banner {
+        width: auto;
+
+        h1 {
+            font-size: $tamanho-do-texto;
+        }
+
+        h2 {
+            font-size: $tamanho-do-texto / 2;
         }
     }
 }

@@ -6,10 +6,6 @@ html, body {
 nav {
   text-align: center;
 }
-nav ul li {
-  display: inline-block;
-  padding: 1rem;
-}
 nav ul li a {
   font-weight: bold;
   text-decoration: none;
@@ -20,6 +16,24 @@ nav ul li a:hover {
   border-bottom: 2px solid #F9CEEE;
 }
 
+@media screen and (min-width: 320px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  ul li {
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  ul {
+    display: block;
+  }
+  ul li {
+    display: inline-block;
+    padding: 1rem;
+  }
+}
 .banner {
   align-items: center;
   background: url(../../imagens/banner.jpeg) 27% center no-repeat;
@@ -36,50 +50,59 @@ nav ul li a:hover {
   padding: 3rem;
 }
 .banner .inner-banner h1 {
-  font-size: 3rem;
   color: #97C4B8;
   text-align: center;
 }
 .banner .inner-banner h2 {
-  font-size: 1.5rem;
   color: #97C4B8;
   text-align: center;
 }
 
-#servicos {
-  margin: 80px;
+@media screen and (min-width: 320px) {
+  .inner-banner {
+    width: 200px;
+  }
+  .inner-banner h1 {
+    font-size: 2.5rem;
+  }
+  .inner-banner h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .inner-banner {
+    width: auto;
+  }
+  .inner-banner h1 {
+    font-size: 3rem;
+  }
+  .inner-banner h2 {
+    font-size: 1.5rem;
+  }
 }
 #servicos h3 {
   color: #97C4B8;
-  font-size: 1.2rem;
   font-weight: 300;
   margin: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
 #servicos h4 {
-  font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 80px;
   text-align: center;
 }
 #servicos .cards {
   display: flex;
-  justify-content: space-evenly;
 }
 #servicos .cards .card {
   text-align: center;
-  width: 360px;
 }
 #servicos .cards .card h5 {
   color: #97C4B8;
-  font-size: 2rem;
   font-weight: 300;
   margin-bottom: 20px;
-  margin-top: 25px;
 }
 #servicos .cards .card p {
-  font-size: 1rem;
   font-weight: 300;
   line-height: 1.25rem;
 }
@@ -91,6 +114,55 @@ nav ul li a:hover {
   max-width: 100%;
 }
 
+@media screen and (min-width: 320px) {
+  #servicos {
+    margin: 20px;
+  }
+  #servicos h3 {
+    font-size: 1.7142857143rem;
+  }
+  #servicos h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  #servicos .cards {
+    flex-direction: column;
+  }
+  #servicos .cards .card h5 {
+    font-size: 1.7142857143rem;
+    margin-top: 20px;
+  }
+  #servicos .cards .card p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #servicos {
+    margin: 80px;
+  }
+  #servicos h3 {
+    font-size: 1.2rem;
+  }
+  #servicos h4 {
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+  }
+  #servicos .cards {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  #servicos .cards .card {
+    width: 360px;
+  }
+  #servicos .cards .card h5 {
+    font-size: 2rem;
+    margin-top: 25px;
+  }
+  #servicos .cards .card p {
+    font-size: 1rem;
+  }
+}
 #cupom {
   background-color: #CCF3EE;
   padding: 4rem;
@@ -99,24 +171,16 @@ nav ul li a:hover {
 #cupom .texto {
   color: #97C4B8;
 }
-#cupom .texto h2 {
-  font-size: 1.7647058824rem;
-  margin: 2rem;
-}
 #cupom .input {
   background: #fdfdfd;
   border: 4px solid #fdfdfd;
   border-radius: 20px;
   margin: 0 auto;
-  width: 575px;
 }
 #cupom .input input {
   border: none;
   border-radius: 20px;
-  font-size: 26px;
-  height: 40px;
   outline: none;
-  width: 540px;
 }
 #cupom .input:hover, #cupom .input:focus-within {
   box-shadow: 1px 1px 8px 1px #F9CEEE;
@@ -130,27 +194,59 @@ nav ul li a:hover {
   cursor: pointer;
   font-size: 12px;
   font-weight: bold;
-  height: 40px;
   letter-spacing: 1px;
   margin-top: 0.75rem;
   outline: none;
   text-align: center;
   text-transform: uppercase;
-  width: 130px;
 }
 #cupom button:hover {
   background-color: #F9F3EE;
   color: #97C4B8;
 }
 
+@media screen and (min-width: 320px) {
+  #cupom h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  #cupom .input {
+    width: 200px;
+  }
+  #cupom .input input {
+    font-size: 15px;
+    height: 20px;
+    width: 180px;
+  }
+
+  button {
+    height: 25px;
+    width: 110px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #cupom h2 {
+    font-size: 1.7647058824rem;
+    margin: 2rem;
+  }
+  #cupom .input {
+    width: 675px;
+  }
+  #cupom .input input {
+    font-size: 26px;
+    height: 40px;
+    width: 640px;
+  }
+  #cupom button {
+    height: 40px;
+    width: 130px;
+  }
+}
 #curiosidades {
-  padding: 1rem;
   text-align: center;
-  margin: 5px;
 }
 #curiosidades h3 {
   color: #97C4B8;
-  font-size: 1.2rem;
   padding: 0.75rem;
 }
 #curiosidades h4 {
@@ -160,6 +256,32 @@ nav ul li a:hover {
   margin-top: 5px;
 }
 
+@media screen and (min-width: 320px) {
+  #curiosidades {
+    margin: 10px;
+  }
+  #curiosidades img {
+    width: 300px;
+  }
+  #curiosidades h3 {
+    font-size: 2rem;
+  }
+  #curiosidades p {
+    line-height: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #curiosidades {
+    padding: 1rem;
+    margin: 5px;
+  }
+  #curiosidades img {
+    width: 450px;
+  }
+  #curiosidades h3 {
+    font-size: 1.2rem;
+  }
+}
 footer {
   border-top: 2px solid #97C4B8;
   font-size: 1.5rem;
